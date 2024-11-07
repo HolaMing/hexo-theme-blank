@@ -1,0 +1,488 @@
+/* #################### ��ㄥ�� #################### */
+* {
+  margin: 10;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(33, 39, 55);
+}
+
+#main {
+  width: 800px;
+  margin: 0 auto;
+  font-family: "Microsoft YaHei","Arial","榛�浣�","瀹�浣�",sans-serif;  
+}
+
+#content {
+  /* border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(255, 107, 1); */
+  border-top: 2px solid rgb(255, 107, 1);
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(255, 107, 1);
+}
+
+#footer {
+  text-align: center;         /* 璁╃�����淇℃��灞�涓� */
+  color: #fff;                /* 璁剧疆���瀛�棰���� */
+  font-size: 14px;            /* 璁剧疆瀛�浣�澶у�� */
+  line-height: 1;           /* 缂╁��琛���磋��锛���板��瓒�灏�琛�璺�瓒�绱у�� */
+  padding-bottom: 5px;
+}
+
+#footer a {
+  color: #fff;                /* 璁剧疆��炬�ユ��瀛�棰���� */
+  text-decoration: none;      /* ��绘����炬�ヤ�����绾� */
+}
+
+#footer a:hover {
+  text-decoration: underline; /* 榧������������跺��涓����绾� */
+}
+
+/* #################### 瀵艰�� #################### */
+nav {
+  height: 50px;
+  padding: 20px 20px;
+}
+
+.nav-title {
+  color: #ffffff;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#menu {
+  list-style: none;
+  gap: 20px; /* 璁剧疆������椤逛����寸����磋�� */
+  display: flex;
+  justify-content: flex-end; /* 灏�������椤瑰�归����板�充晶 */
+  margin-right: 30px;
+}
+
+#menu .menu-item {
+  margin-left: 20px;
+}
+
+#menu .menu-item-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#menu .menu-item-link:hover {
+  border-bottom: 1px solid;
+}
+
+#light-mode-toggle {
+  position: relative;
+  border: 0;
+  margin-top: 30px;
+  background-color: rgb(33, 39, 55);
+}
+/* #################### 涓婚〉 #################### */
+#recentPosts {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 20px;
+}
+
+#articleList ul {
+  list-style: none;
+} 
+
+#articleList .article-li {
+  margin: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#articleList .article-digest{
+  color: #f9f7eda7;
+  margin-left: 140px;
+}
+
+#articleList .article-date{
+  color: #f9f7eda7;
+}
+
+#articleList .article-read {
+  color: #f9f7ed;
+
+}
+
+#articleList .article-title {
+  margin-left: 50px;
+  font-size: 20px;
+  color: rgb(255, 107, 1);
+  text-decoration: none;
+}
+
+#articleList .article-title:hover{
+  color: #ffffff;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid;
+}
+
+/* #################### ���绔� #################### */
+#article {
+  color: #fff;
+
+}
+
+#post-header {
+  top: 100px;
+  text-align: right;
+  float: right;
+}
+
+#post-author,
+#post-date {
+  font-size: 9px;
+  color: #999;
+  display: block;         /* 浣垮��绱�������涓�?? */
+  margin-bottom: 5px;     /* 娣诲��搴���ㄩ�磋�� */
+}
+
+
+/* ���绔����涓����绱���撮�� */
+#article {
+  padding: 30px;
+}
+#article * {
+  margin: 30px 0;
+}
+
+
+#article h1,
+#article h2,
+#article h3,
+#article h4,
+#article h5,
+#article h6 {
+  line-height: 40px;
+  margin: 20px 0 15px;
+  color: rgb(255, 107, 1);
+}
+
+
+#article h1 {
+  font-size: 32px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e06c75;
+}
+
+#article h2 {
+  font-size: 25px;
+  border-left: 3px solid #73b1e0;
+  padding-left: 10px;
+}
+
+#article h3 {
+  font-size: 22px
+}
+
+#article a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#article code {
+  border-radius: 3px;
+}
+
+#article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background-color: #fff;   /* 璁剧疆��剧��������涓虹��?? */
+  padding: 10px;             /* 涓哄�剧��娣诲�����杈硅��锛�浣胯�������存��?? */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ??���锛�涓哄�剧��娣诲����村奖���?? */
+}
+
+#article pre {
+  font-size: 14px;
+  margin: 20px 0 15px;
+}
+
+#article p {
+  margin: 0 0 10px;
+  line-height: 30px
+}
+
+/* 琛ㄦ�煎����� */
+#article table {
+width: 100%;
+border: 0;
+margin: 20px 0 50px 0;
+border-collapse: collapse;
+border-spacing: 0;
+line-height: 35px;
+border-radius: 8px;
+box-shadow: 0px 0px 5px #999;
+}
+
+#article table th {
+background: #73b1e0;
+font-weight: 800;
+font-size: 18px;
+text-align: left;
+line-height: 35px;
+color: #FFF;
+}
+
+
+#article table td, table th {
+padding: 5px 20px 5px 20px
+}
+
+#article table tr:first-child th:first-child {
+border-top-left-radius: 3px;
+}
+
+#article table tr:first-child th:last-child {
+border-top-right-radius: 3px;
+}
+
+#article table tr:last-child td:first-child {
+border-bottom-left-radius: 3px;
+}
+
+#article table tr:last-child td:last-child {
+border-bottom-right-radius: 3px;
+}
+
+
+/* #################### ���褰� #################### */
+.toc {
+  position: fixed;               /* ��哄��瀹�浣� */
+  top: 100px;                    /* 璺�???椤堕�� 100px */
+  right: calc(50% - 600px);      /* 璁剧疆??褰�涓����绔����???���璺�???锛�璋���翠��缃� */
+  padding: 0;
+  max-height: 90%;               /* ���澶ч��搴�锛����???瓒���哄��骞� */
+  max-width: 250px;              /* ���澶у�藉害锛���叉�㈣����哄��骞� */
+  overflow-y: auto;              /* 瓒���洪�ㄥ����剧ず婊����?? */
+  overflow-x: hidden;            /* ������??���婊���ㄦ�� */
+  line-height: 1;              /* 璁剧疆琛�楂� */
+  font-size: 15px;               /* 瀛�浣�澶у�� */
+  z-index: 10;                   /* ??淇����褰���ㄦ��涓�灞� */
+  border-left: 2px solid rgb(255, 107, 1);
+}
+
+/* ??褰�涓�������?? */
+.toc a {
+  display: block;
+  width: 100%;
+  max-width: 180px;            /* �����舵��涓���炬�ョ�����澶у�藉害 */
+  white-space: nowrap;         /* 寮哄�朵�����?? */
+  overflow: hidden;            /* ������瓒���洪�ㄥ�� */
+  text-overflow: ellipsis;     /* 瓒���洪�ㄥ����剧ず������?? */
+  transition: color 0.3s;        /* 榧����??�����堕����茶��娓℃����� */
+}
+
+/* 榧����??�����舵�瑰�����瀛�棰���� */
+.toc a:hover {
+  color: rgb(255, 107, 1);       /* 璁剧疆??�����剁��???��� */
+}
+
+/* 涓轰��绾ф��棰�娣诲��缂�?? */
+.toc ul li a {
+  padding-left: 15px;             /* 浜�绾ф��??????���宸�杈硅�� */
+}
+
+/* 涓轰��绾ф��棰�娣诲����村��缂�?? */
+.toc ul li ul li a {
+  padding-left: 30px;             /* 涓�绾ф��??????������???宸�杈硅�� */
+}
+
+/* 涓哄��绾ф��棰�娣诲����村��缂�?? */
+.toc ul li ul li ul li a {
+  padding-left: 45px;             /* ���绾ф��???��村��缂�?? */
+}
+
+/* ���搴�寮�锛�灞�骞�瀹藉害灏�浜� 768px ��堕��������?? */
+@media (max-width: 800px) {
+  .toc {
+    display: none;                /* 灞�骞�杈�灏���堕��������褰� */
+  }
+}
+
+/* 灞�骞�瀹藉害澶т�� 768px ��舵�剧ず���?? */
+@media (min-width: 800px) {
+  .toc {
+    display: block;               /* 灞�骞�杈�澶ф�舵�剧ず���褰� */
+  }
+}
+
+/* #################### 缈婚〉 #################### */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.pagination a,
+.pagination span {
+  color: rgb(255, 107, 1);
+  text-decoration: none;
+  font-size: 18px;
+  /* letter-spacing: 3px;   */
+}
+
+.pagination a:hover {
+  color: #ffffff /* 榧����??������������ */
+}
+
+.pagination .page-info {
+  font-weight: bold;
+}
+
+.pagination .disabled {
+  color: #00000000; /* 绂���ㄧ��???澶�???��� */
+  pointer-events: none;
+}
+
+.pagination .prev, 
+.pagination .next {
+  font-weight: bold;  /* ���绮� prev ?? next ������?? */
+}
+
+
+/* #################### 娴���叉ā寮� #################### */
+body.light-mode {
+  background-color: rgb(244, 244, 244); /* 娴���拌�插�� */
+  color: #1e1e1e; /* 榛�瀛� */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 涓婚〉��稿�崇�����瀛�???��� */
+body.light-mode #recentPosts,
+body.light-mode #articleList .article-li,
+body.light-mode #articleList .article-title,
+body.light-mode #articleList .article-digest,
+body.light-mode #articleList .article-date,
+body.light-mode #articleList .article-read {
+  color: #1e1e1e; /* 榛���叉��瀛� */
+}
+
+/* 瀵艰��?? */
+body.light-mode nav,
+body.light-mode #content,
+body.light-mode #article,
+body.light-mode #footer *{
+  background-color: rgb(244, 244, 244); /* 娴���拌�插�� */
+  color: #1e1e1e; /* 榛�瀛� */
+}
+
+body.light-mode #light-mode-toggle {
+  margin-top: 30px;
+  background-color: rgb(244, 244, 244); 
+}
+
+body.light-mode #content{
+  background-color: rgb(244, 244, 244); /* 娴���拌�插�� */
+  color: #1e1e1e; /* 榛�瀛� */
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/* 瀵艰��������?? */
+body.light-mode .nav-title,
+body.light-mode #menu .menu-item-link {
+  color: #1e1e1e;
+}
+
+body.light-mode #menu .menu-item-link:hover {
+  color: #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+/* ���绔����???���娈佃�� */
+body.light-mode #article h1,
+body.light-mode #article h2,
+body.light-mode #article h3,
+body.light-mode #article h4,
+body.light-mode #article h5,
+body.light-mode #article h6,
+body.light-mode #article p,
+body.light-mode #article a {
+  color: #1e1e1e; /* ??纭�淇����绔�������瀛�棰���蹭负榛���� */
+}
+
+/* ��剧��瀹瑰�� */
+body.light-mode #article img {
+  background-color: #ffffff; /* ��借�茶�����浠ョ����哄��瀹� */
+  padding: 10px;
+}
+
+/* ???? */
+body.light-mode .toc {
+  background-color: rgb(244, 244, 244); /* 娴���拌�插�� */
+  color: #1e1e1e; /* 榛�瀛� */
+  border-left: 2px solid #1e1e1e;
+}
+
+body.light-mode .toc a {
+  color: #1e1e1e;
+}
+
+body.light-mode .toc a:hover {
+  color: rgb(255, 107, 1); /* ??������������ */
+}
+
+/* 琛ㄦ�� */
+body.light-mode #article table {
+  background-color: rgb(244, 244, 244); /* 娴���拌�插�� */
+  color: #1e1e1e;
+  border-color: #cccccc;
+}
+
+body.light-mode #article table th {
+  background-color: #e0e0e0; /* 琛ㄥご娴���拌����� */
+  color: #1e1e1e;
+}
+
+body.light-mode #article table td {
+  background-color: rgb(244, 244, 244);
+  color: #1e1e1e;
+}
+
+/* ���������杈����??? */
+body.light-mode button,
+body.light-mode input,
+body.light-mode textarea {
+  background-color: #e0e0e0;
+  color: #1e1e1e;
+  border: 1px solid #cccccc;
+}
+
+/* 椤佃�� */
+body.light-mode #footer {
+  color: #1e1e1e;
+}
+
+/* 缈婚〉��т欢 */
+body.light-mode .pagination a,
+body.light-mode .pagination .page-info {
+  color: #1e1e1e;
+}
+
+body.light-mode .pagination .prev, 
+body.light-mode .pagination .next {
+  font-weight: bold;
+}
+

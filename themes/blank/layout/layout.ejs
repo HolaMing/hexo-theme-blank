@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- theme.title %></title>
+    <meta charset="utf-8">
+
+    <!-- 引入配置文件 -->
+    <%- css('css/main.css') %>
+
+    <!-- 代码高亮库 -->
+    <%- css('/lib/highlight/styles/atom-one-dark') %>
+    
+    <!-- 引入 Material Symbols 图标字体（仅需一次） -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+    <div id="main">
+        <!-- 引入导航 -->
+        <nav>
+            <%- include('nav.ejs') %>
+        </nav>
+
+        <!-- 引入正文 -->
+        <div id="content">
+      <%- body %>
+        </div>
+        
+        <footer id="footer">
+          <p>&copy; <%= new Date().getFullYear() %> Jettmin</p>
+          <p> Powered <a href="https://github.com/hexojs/hexo">Hexo</a> | Theme <a href="https://github.com/hexojs/hexo-theme-landscape">Blank</a></p>
+        </footer>
+    </div>
+    <!-- 引入 js 文件 -->
+    <%- js('js/main.js') %>
+</body>
+</html>

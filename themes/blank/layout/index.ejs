@@ -1,0 +1,36 @@
+<% if (page.__index && page.current === 1) { %>
+  <h1 id="recentPosts">Most Recent Posts</h1>
+<% } %>
+
+<div id="articleList">
+  <ul>
+      <% page.posts.each(function(post){ %>
+          <li class="article-li">
+              <span class="article-date"><%- date(post.date, "YYYY-MM-DD") %></span>
+              <a class="article-title" href="<%- config.root %><%- post.path %>"><%- post.slug.split("/")[post.slug.split("/").length-1] %></a>
+              <div class="article-digest">
+                  <%- post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>...
+              </div>
+          </li>
+      <% }); %>
+  </ul>
+</div>
+
+<% if (page.total > 1) { %> 
+  <div class="pagination">
+    <% if (page.prev) { %>
+      <a class="prev" href="<%= url_for(page.prev_link) %>">❮</a>
+    <% } else { %>
+      <span class="disabled">❮</span>
+    <% } %>
+
+    <span class="page-info"><%= page.current %> / <%= page.total %></span>
+
+    <% if (page.next) { %>
+      <a class="next" href="<%= url_for(page.next_link) %>">❯</a>
+    <% } else { %>
+      <span class="disabled">❯</span>
+    <% } %>
+  </div>
+<% } %>
+

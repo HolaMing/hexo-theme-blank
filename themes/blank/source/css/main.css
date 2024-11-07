@@ -1,0 +1,493 @@
+/* #################### 全局 #################### */
+* {
+  margin: 10;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(33, 39, 55);
+}
+
+#main {
+  width: 800px;
+  margin: 0 auto;
+  font-family: "Microsoft YaHei","Arial","黑体","宋体",sans-serif;  
+}
+
+#content {
+  /* border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(255, 107, 1); */
+  border-top: 2px solid rgb(255, 107, 1);
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(255, 107, 1);
+}
+
+#footer {
+  text-align: center;         /* 让版权信息居中 */
+  color: #fff;                /* 设置文字颜色 */
+  font-size: 14px;            /* 设置字体大小 */
+  line-height: 1;           /* 缩小行间距，数字越小行距越紧凑 */
+  padding-bottom: 5px;
+}
+
+#footer a {
+  color: #fff;                /* 设置链接文字颜色 */
+  text-decoration: none;      /* 去掉链接下划线 */
+}
+
+#footer a:hover {
+  text-decoration: underline; /* 鼠标悬停时加下划线 */
+}
+
+/* #################### 导航 #################### */
+nav {
+  height: 50px;
+  padding: 20px 20px;
+}
+
+.nav-title {
+  color: #ffffff;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#menu {
+  list-style: none;
+  gap: 20px; /* 设置菜单项之间的间距 */
+  display: flex;
+  justify-content: flex-end; /* 将菜单项对齐到右侧 */
+}
+
+#menu .menu-item {
+  margin-left: 20px;
+}
+
+#menu .menu-item-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#menu .menu-item-link:hover {
+  border-bottom: 1px solid;
+}
+
+#light-mode-toggle {
+  border: 0;
+  /* margin-top: 20px; */
+  background-color: rgb(33, 39, 55);
+}
+
+.material-symbols-outlined {
+  color: #ffffff;
+}
+/* #################### 主页 #################### */
+#recentPosts {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 20px;
+}
+
+#articleList ul {
+  list-style: none;
+} 
+
+#articleList .article-li {
+  margin: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#articleList .article-digest{
+  color: #f9f7eda7;
+  margin-left: 140px;
+}
+
+#articleList .article-date{
+  color: #f9f7eda7;
+}
+
+#articleList .article-read {
+  color: #f9f7ed;
+
+}
+
+#articleList .article-title {
+  margin-left: 50px;
+  font-size: 20px;
+  color: rgb(255, 107, 1);
+  text-decoration: none;
+}
+
+#articleList .article-title:hover{
+  color: #ffffff;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid;
+}
+
+/* #################### 文章 #################### */
+#article {
+  color: #fff;
+
+}
+
+#post-header {
+  top: 100px;
+  text-align: right;
+  float: right;
+}
+
+#post-author,
+#post-date {
+  font-size: 9px;
+  color: #999;
+  display: block;         /* 使元素独占一?? */
+  margin-bottom: 5px;     /* 添加底部间距 */
+}
+
+
+/* 文章各个元素间隔 */
+#article {
+  padding: 30px;
+}
+#article * {
+  margin: 30px 0;
+}
+
+
+#article h1,
+#article h2,
+#article h3,
+#article h4,
+#article h5,
+#article h6 {
+  line-height: 40px;
+  margin: 20px 0 15px;
+  color: rgb(255, 107, 1);
+}
+
+
+#article h1 {
+  font-size: 32px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e06c75;
+}
+
+#article h2 {
+  font-size: 25px;
+  border-left: 3px solid #73b1e0;
+  padding-left: 10px;
+}
+
+#article h3 {
+  font-size: 22px
+}
+
+#article a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#article code {
+  border-radius: 3px;
+}
+
+#article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background-color: #fff;   /* 设置图片背景为白?? */
+  padding: 10px;             /* 为图片添加内边距，使背景更显?? */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ??选：为图片添加阴影效?? */
+}
+
+#article pre {
+  font-size: 14px;
+  margin: 20px 0 15px;
+}
+
+#article p {
+  margin: 0 0 10px;
+  line-height: 30px
+}
+
+/* 表格处理 */
+#article table {
+width: 100%;
+border: 0;
+margin: 20px 0 50px 0;
+border-collapse: collapse;
+border-spacing: 0;
+line-height: 35px;
+border-radius: 8px;
+box-shadow: 0px 0px 5px #999;
+}
+
+#article table th {
+background: #73b1e0;
+font-weight: 800;
+font-size: 18px;
+text-align: left;
+line-height: 35px;
+color: #FFF;
+}
+
+
+#article table td, table th {
+padding: 5px 20px 5px 20px
+}
+
+#article table tr:first-child th:first-child {
+border-top-left-radius: 3px;
+}
+
+#article table tr:first-child th:last-child {
+border-top-right-radius: 3px;
+}
+
+#article table tr:last-child td:first-child {
+border-bottom-left-radius: 3px;
+}
+
+#article table tr:last-child td:last-child {
+border-bottom-right-radius: 3px;
+}
+
+
+/* #################### 目录 #################### */
+.toc {
+  position: fixed;               /* 固定定位 */
+  top: 100px;                    /* 距???顶部 100px */
+  right: calc(50% - 600px);      /* 设置??录与文章内???的距???，调整位置 */
+  padding: 0;
+  max-height: 90%;               /* 最大高度，防???超出屏幕 */
+  max-width: 250px;              /* 最大宽度，防止超出屏幕 */
+  overflow-y: auto;              /* 超出部分显示滚动?? */
+  overflow-x: hidden;            /* 隐藏??向滚动条 */
+  line-height: 1;              /* 设置行高 */
+  font-size: 15px;               /* 字体大小 */
+  z-index: 10;                   /* ??保目录在最上层 */
+  border-left: 2px solid rgb(255, 107, 1);
+}
+
+/* ??录中的链?? */
+.toc a {
+  display: block;
+  width: 100%;
+  max-width: 180px;            /* 限制每个链接的最大宽度 */
+  white-space: nowrap;         /* 强制不换?? */
+  overflow: hidden;            /* 隐藏超出部分 */
+  text-overflow: ellipsis;     /* 超出部分显示省略?? */
+  transition: color 0.3s;        /* 鼠标??停时颜色过渡效果 */
+}
+
+/* 鼠标??停时改变文字颜色 */
+.toc a:hover {
+  color: rgb(255, 107, 1);       /* 设置??停时的???色 */
+}
+
+/* 为二级标题添加缩?? */
+.toc ul li a {
+  padding-left: 15px;             /* 二级标??????加左边距 */
+}
+
+/* 为三级标题添加更多缩?? */
+.toc ul li ul li a {
+  padding-left: 30px;             /* 三级标??????加更???左边距 */
+}
+
+/* 为四级标题添加更多缩?? */
+.toc ul li ul li ul li a {
+  padding-left: 45px;             /* 四级标???更多缩?? */
+}
+
+/* 响应式：屏幕宽度小于 768px 时隐藏目?? */
+@media (max-width: 800px) {
+  .toc {
+    display: none;                /* 屏幕较小时隐藏目录 */
+  }
+}
+
+/* 屏幕宽度大于 768px 时显示目?? */
+@media (min-width: 800px) {
+  .toc {
+    display: block;               /* 屏幕较大时显示目录 */
+  }
+}
+
+/* #################### 翻页 #################### */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.pagination a,
+.pagination span {
+  color: rgb(255, 107, 1);
+  text-decoration: none;
+  font-size: 18px;
+  /* letter-spacing: 3px;   */
+}
+
+.pagination a:hover {
+  color: #ffffff /* 鼠标??悬停效果 */
+}
+
+.pagination .page-info {
+  font-weight: bold;
+}
+
+.pagination .disabled {
+  color: #00000000; /* 禁用的???头???色 */
+  pointer-events: none;
+}
+
+.pagination .prev, 
+.pagination .next {
+  font-weight: bold;  /* 加粗 prev ?? next 的文?? */
+}
+
+
+/* #################### 浅色模式 #################### */
+body.light-mode {
+  background-color: rgb(244, 244, 244); /* 浅灰色底 */
+  color: #1e1e1e; /* 黑字 */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 主页相关的文字???色 */
+body.light-mode #recentPosts,
+body.light-mode #articleList .article-li,
+body.light-mode #articleList .article-title,
+body.light-mode #articleList .article-digest,
+body.light-mode #articleList .article-date,
+body.light-mode #articleList .article-read {
+  color: #1e1e1e; /* 黑色文字 */
+}
+
+/* 导航?? */
+body.light-mode nav,
+body.light-mode #content,
+body.light-mode #article,
+body.light-mode #footer *{
+  background-color: rgb(244, 244, 244); /* 浅灰色底 */
+  color: #1e1e1e; /* 黑字 */
+}
+
+body.light-mode #light-mode-toggle {
+  background-color: rgb(244, 244, 244); 
+}
+
+body.light-mode .material-symbols-outlined {
+  color: #1e1e1e; 
+}
+
+body.light-mode #content{
+  background-color: rgb(244, 244, 244); /* 浅灰色底 */
+  color: #1e1e1e; /* 黑字 */
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/* 导航栏文?? */
+body.light-mode .nav-title,
+body.light-mode #menu .menu-item-link {
+  color: #1e1e1e;
+}
+
+body.light-mode #menu .menu-item-link:hover {
+  color: #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+/* 文章标???和段落 */
+body.light-mode #article h1,
+body.light-mode #article h2,
+body.light-mode #article h3,
+body.light-mode #article h4,
+body.light-mode #article h5,
+body.light-mode #article h6,
+body.light-mode #article p,
+body.light-mode #article a {
+  color: #1e1e1e; /* ??确保文章的文字颜色为黑色 */
+}
+
+/* 图片容器 */
+body.light-mode #article img {
+  background-color: #ffffff; /* 白色背景以突出内容 */
+  padding: 10px;
+}
+
+/* ???? */
+body.light-mode .toc {
+  background-color: rgb(244, 244, 244); /* 浅灰色底 */
+  color: #1e1e1e; /* 黑字 */
+  border-left: 2px solid #1e1e1e;
+}
+
+body.light-mode .toc a {
+  color: #1e1e1e;
+}
+
+body.light-mode .toc a:hover {
+  color: rgb(255, 107, 1); /* ??悬停效果 */
+}
+
+/* 表格 */
+body.light-mode #article table {
+  background-color: rgb(244, 244, 244); /* 浅灰色底 */
+  color: #1e1e1e;
+  border-color: #cccccc;
+}
+
+body.light-mode #article table th {
+  background-color: #e0e0e0; /* 表头浅灰背景 */
+  color: #1e1e1e;
+}
+
+body.light-mode #article table td {
+  background-color: rgb(244, 244, 244);
+  color: #1e1e1e;
+}
+
+/* 按钮和输入??? */
+body.light-mode button,
+body.light-mode input,
+body.light-mode textarea {
+  background-color: #e0e0e0;
+  color: #1e1e1e;
+  border: 1px solid #cccccc;
+}
+
+/* 页脚 */
+body.light-mode #footer {
+  color: #1e1e1e;
+}
+
+/* 翻页控件 */
+body.light-mode .pagination a,
+body.light-mode .pagination .page-info {
+  color: #1e1e1e;
+}
+
+body.light-mode .pagination .prev, 
+body.light-mode .pagination .next {
+  font-weight: bold;
+}
+
