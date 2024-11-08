@@ -20,16 +20,17 @@ body {
 #main {
   width: 800px;
   margin: 0 auto;
-  font-family: "Microsoft YaHei","Arial","黑体","宋体",sans-serif;  
+  font-family: "Microsoft YaHei","Arial","黑体","宋体",sans-serif; 
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 #content {
   /* border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(255, 107, 1); */
-  border-top: 2px solid rgb(255, 107, 1);
+  border-top: 1px solid rgb(255, 107, 1);
   padding-bottom: 20px;
-  border-bottom: 2px solid rgb(255, 107, 1);
+  border-bottom: 1px solid rgb(255, 107, 1);
 }
 
 #footer {
@@ -52,7 +53,7 @@ body {
 /* #################### 导航 #################### */
 nav {
   height: 50px;
-  padding: 20px 20px;
+  padding: 20px 0px;
 }
 
 .nav-title {
@@ -69,10 +70,10 @@ nav {
   display: flex;
   justify-content: flex-end; /* 将菜单项对齐到右侧 */
 }
-
+/* 
 #menu .menu-item {
   margin-left: 20px;
-}
+} */
 
 #menu .menu-item-link {
   font-size: 15px;
@@ -92,6 +93,7 @@ nav {
 
 .material-symbols-outlined {
   color: #ffffff;
+  /* margin-left: 20px; */
 }
 /* #################### 主页 #################### */
 #recentPosts {
@@ -139,7 +141,7 @@ nav {
 /* #################### 文章 #################### */
 #article {
   color: #fff;
-
+  padding: 30px;
 }
 
 #post-header {
@@ -152,19 +154,14 @@ nav {
 #post-date {
   font-size: 9px;
   color: #999;
-  display: block;         /* 使元素独占一?? */
-  margin-bottom: 5px;     /* 添加底部间距 */
+  display: block; /* 使元素独占一行 */
+  margin-bottom: 5px; /* 添加底部间距 */
 }
-
 
 /* 文章各个元素间隔 */
-#article {
-  padding: 30px;
-}
 #article * {
-  margin: 30px 0;
+  margin: 20px 0;
 }
-
 
 #article h1,
 #article h2,
@@ -172,17 +169,16 @@ nav {
 #article h4,
 #article h5,
 #article h6 {
-  line-height: 40px;
+  line-height: 30px;
   margin: 20px 0 15px;
   color: rgb(255, 107, 1);
 }
 
-
 #article h1 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 900;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e06c75;
+  /* border-bottom: 2px solid #ffffff; */
 }
 
 #article h2 {
@@ -192,7 +188,7 @@ nav {
 }
 
 #article h3 {
-  font-size: 22px
+  font-size: 22px;
 }
 
 #article a {
@@ -208,9 +204,9 @@ nav {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-  background-color: #fff;   /* 设置图片背景为白?? */
-  padding: 10px;             /* 为图片添加内边距，使背景更显?? */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ??选：为图片添加阴影效?? */
+  background-color: #fff; /* 设置图片背景为白色 */
+  padding: 10px; /* 为图片添加内边距，使背景更显眼 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 为图片添加阴影效果 */
 }
 
 #article pre {
@@ -220,50 +216,55 @@ nav {
 
 #article p {
   margin: 0 0 10px;
-  line-height: 30px
+  line-height: 30px;
 }
 
 /* 表格处理 */
 #article table {
-width: 100%;
-border: 0;
-margin: 20px 0 50px 0;
-border-collapse: collapse;
-border-spacing: 0;
-line-height: 35px;
-border-radius: 8px;
-box-shadow: 0px 0px 5px #999;
+  width: 100%;
+  border: 0;
+  margin: 20px 0 50px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 35px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px #999;
 }
 
 #article table th {
-background: #73b1e0;
-font-weight: 800;
-font-size: 18px;
-text-align: left;
-line-height: 35px;
-color: #FFF;
+  background: #73b1e0;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: left;
+  line-height: 35px;
+  color: #FFF;
 }
 
-
 #article table td, table th {
-padding: 5px 20px 5px 20px
+  padding: 5px 20px 5px 20px;
 }
 
 #article table tr:first-child th:first-child {
-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
 #article table tr:first-child th:last-child {
-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 #article table tr:last-child td:first-child {
-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 #article table tr:last-child td:last-child {
-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
+
+/* 防止标题被#标记影响 */
+#article h1, #article h2, #article h3, #article h4, #article h5, #article h6 {
+  text-decoration: none; /* 确保没有下划线 */
+}
+
 
 
 /* #################### 目录 #################### */
@@ -279,7 +280,7 @@ border-bottom-right-radius: 3px;
   line-height: 1;              /* 设置行高 */
   font-size: 15px;               /* 字体大小 */
   z-index: 10;                   /* ??保目录在最上层 */
-  border-left: 2px solid rgb(255, 107, 1);
+  border-left: 1px solid rgb(255, 107, 1);
 }
 
 /* ??录中的链?? */

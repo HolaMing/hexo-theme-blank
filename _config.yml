@@ -45,12 +45,9 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  line_number: false
-  auto_detect: false
-  wrap: true
-  hljs: false
   enable: false
-  tab_replace:
+  line_number: true    # 可选，显示行号
+  auto_detect: true   # 可选，是否自动检测语言
 prismjs:
   preprocess: true
   line_number: true
@@ -106,12 +103,6 @@ toc:
     position: after
     symbol: '#'
     style: header-anchor
-
-darkmode:
-  enable: true
-  save: true                 # 记住用户的偏好设置
-  auto: true                 # 根据用户系统自动切换
-  buttonPosition: bottom-right # 按钮的位置
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
