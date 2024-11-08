@@ -141,7 +141,7 @@ nav {
 /* #################### 文章 #################### */
 #article {
   color: #fff;
-  padding: 30px;
+  padding: 30px 10px;
 }
 
 #post-header {
@@ -170,25 +170,26 @@ nav {
 #article h5,
 #article h6 {
   line-height: 30px;
-  margin: 20px 0 15px;
+  margin: 20px 0;
   color: rgb(255, 107, 1);
 }
 
 #article h1 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 900;
   padding-bottom: 10px;
   /* border-bottom: 2px solid #ffffff; */
+  border-left: 2px solid #73b1e0;
 }
 
 #article h2 {
-  font-size: 25px;
-  border-left: 3px solid #73b1e0;
-  padding-left: 10px;
+  font-size: 22px;
+  margin-left: 10px; /* 设置缩进 */
 }
 
 #article h3 {
-  font-size: 22px;
+  font-size: 20px;
+  margin-left: 15px; /* 设置缩进 */
 }
 
 #article a {
@@ -196,8 +197,19 @@ nav {
   text-decoration: none;
 }
 
-#article code {
-  border-radius: 3px;
+/* 默认情况下，header-anchor 占位但不可见 */
+.header-anchor {
+  visibility: hidden; /* 使内容不可见但仍占位 */
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* 当鼠标悬停在标题上时，使 header-anchor 可见 */
+h1:hover .header-anchor,
+h2:hover .header-anchor,
+h3:hover .header-anchor,
+h4:hover .header-anchor {
+  visibility: visible; /* 恢复可见 */
 }
 
 #article img {
@@ -217,6 +229,16 @@ nav {
 #article p {
   margin: 0 0 10px;
   line-height: 30px;
+}
+
+/* 其他内容（如段落、列表等）进行缩进 */
+#article p,
+#article pre{
+  margin-left: 20px; /* 设置缩进 */
+}
+
+#article ol {
+  margin-left: 40px; /* 设置缩进 */
 }
 
 /* 表格处理 */
@@ -240,8 +262,8 @@ nav {
   color: #FFF;
 }
 
-#article table td, table th {
-  padding: 5px 20px 5px 20px;
+#article table td, #article table th {
+  padding: 5px 20px;
 }
 
 #article table tr:first-child th:first-child {
@@ -264,7 +286,6 @@ nav {
 #article h1, #article h2, #article h3, #article h4, #article h5, #article h6 {
   text-decoration: none; /* 确保没有下划线 */
 }
-
 
 
 /* #################### 目录 #################### */
