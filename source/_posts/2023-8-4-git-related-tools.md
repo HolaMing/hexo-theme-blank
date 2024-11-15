@@ -3,10 +3,12 @@ layout: Post
 title: Git相关规范管理工具  
 date: 2023-08-04  
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2023-8-3/2.jpg
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
+categories: 
+- Common
+- Network
+- MCU
+- Read
+- Life
 tags: 
   - Common
 giscus: true  

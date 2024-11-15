@@ -100,7 +100,7 @@ toc:
   slugify: transliteration
   decodeEntities: false
   anchor:
-    position: before
+    position: after
     symbol: '#'
     style: header-anchor
 

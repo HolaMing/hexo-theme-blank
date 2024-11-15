@@ -1,16 +1,13 @@
---- 
-layout: Post
-title: Simple Guitar使用体验
-date: 2024-04-18
-author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2024-04-18/1.jpg
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
-giscus: true  
-tags: 
-  - life
 ---
+title: 好用的邮件客户端推荐
+date: 2019-05-27 18:27:23
+tags: [tag1, tag2, tag3, tag4]
+categories:
+  - 原创 
+  - 软件
+  - PC
+---
+
 ## 1. 性价比不错。
 
 个人订阅费月付14.9刀，家庭订阅月付29.9刀可使用5个用户。相比线下上课的价格来看算比较有性价比,而且对于不想去线下上课的人来说，这不妨是个好的选择。![](/img/in-post/2024-04-18/2.jpeg)

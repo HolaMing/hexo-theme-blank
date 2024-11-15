@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tags</title>
+  <link rel="stylesheet" href="<%= url_for('/css/main.css') %>">
+</head>
+<body>
+  <div class="tags-container">
+    <!-- 标签列表 -->
+    <a href="#" onclick="showAll()" class="tag-button active">#Show All</a>
+    <% site.tags.forEach(function(tag) { %>
+      <a href="#" onclick="filterTag('<%= tag.name %>')" class="tag-button" data-tag="<%= tag.name %>">
+        #<%= tag.name %> (<%= tag.length %>)
+      </a>
+    <% }); %>
+  </div>
+
+  <div class="posts-by-tag">
+    <% site.tags.forEach(function(tag) { %>
+      <div id="<%= tag.name %>" class="tag-section">
+        <h2>#<%= tag.name %></h2>
+        <% tag.posts.sort('date', -1).forEach(function(post) { %>
+          <p><%= post.date.format('YYYY-MM-DD') %><a href="<%= url_for(post.path) %>">
+            <%- post.slug.split("/")[post.slug.split("/").length-1] %></a></p>
+        <% }); %>
+      </div>
+    <% }); %>
+  </div>
+
+  <script>
+    // 显示所有标签的文章
+    function showAll() {
+      // 移除所有标签的选中状态
+      document.querySelectorAll('.tag-button').forEach(button => button.classList.remove('active'));
+
+      // 为 "Show All" 按钮添加选中状态
+      document.querySelector('.tag-button').classList.add('active');
+
+      // 显示所有标签的文章
+      document.querySelectorAll('.tag-section').forEach(section => {
+        section.classList.add('show');
+      });
+    }
+
+    // 显示单个标签下的文章
+    function filterTag(tagName) {
+      // 移除所有标签的选中状态
+      document.querySelectorAll('.tag-button').forEach(button => button.classList.remove('active'));
+
+      // 为当前选中的标签按钮添加选中状态
+      const selectedButton = document.querySelector(`.tag-button[data-tag="${tagName}"]`);
+      if (selectedButton) {
+        selectedButton.classList.add('active');
+      }
+
+      // 显示选中标签的文章，隐藏其他标签的文章
+      document.querySelectorAll('.tag-section').forEach(section => {
+        if (section.id === tagName) {
+          section.classList.add('show');
+        } else {
+          section.classList.remove('show');
+        }
+      });
+    }
+
+    // 页面加载时，默认显示所有标签的文章
+    showAll();
+  </script>
+</body>
+</html>

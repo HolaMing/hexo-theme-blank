@@ -5,7 +5,9 @@ author: jettmin
 menus: 
   HOME: /
   ARCHIVE: /archives
+  TAG: /tags
   ABOUT: /about
+  
 
 # links:
 #   github: https://github.com

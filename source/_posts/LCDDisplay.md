@@ -1,6 +1,8 @@
 ---
 title: LCD屏幕显示的设计逻辑
 date: 2024-10-09
+tags: 
+  - MCU
 ---
 <!-- toc -->
 

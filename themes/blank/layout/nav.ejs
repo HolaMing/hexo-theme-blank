@@ -1,23 +1,29 @@
 <h1 class="nav-title">Hello</h1>
 
 <ul id="menu">
-    <!-- 内部链接本页面直接跳转 -->
-    <% for (menu in theme.menus) { %>
+  <!-- 内部链接本页面直接跳转 -->
+  <% for (menu in theme.menus) { %>
     <li class="menu-item">
-        <a href="<%- theme.menus[menu] %>" class="menu-item-link"><%- menu %></a>
+      <!-- 去掉 .html 后缀，确保路径比较时的一致性 -->
+      <a href="<%- theme.menus[menu] %>" 
+         class="menu-item-link <%= (page.path === theme.menus[menu] || page.path === theme.menus[menu] + '/index.html' || page.path === theme.menus[menu] + '/') ? 'active' : '' %>">
+        <%- menu %>
+      </a>
     </li>
-    <% } %>
+  <% } %>
 
-    <!-- 外部链接打开新的窗口跳转 -->
-    <% for (link in theme.links) { %>
+  <!-- 外部链接打开新的窗口跳转 -->
+  <% for (link in theme.links) { %>
     <li class="menu-item">
-        <a href="<%- theme.links[link] %>" class="menu-item-link" target="_blank"><%- link %></a>
+      <a href="<%- theme.links[link] %>" class="menu-item-link" target="_blank">
+        <%- link %>
+      </a>
     </li>
-    <% } %>
+  <% } %>
 
-    <button id="light-mode-toggle">
-        <span class="material-symbols-outlined" id="mode-icon">
-            light_mode
-        </span>
-    </button>
+  <button id="light-mode-toggle">
+      <span class="material-symbols-outlined" id="mode-icon">
+          light_mode
+      </span>
+  </button>
 </ul>

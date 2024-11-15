@@ -81,8 +81,9 @@ nav {
   color: #ffffff;
 }
 
-#menu .menu-item-link:hover {
-  border-bottom: 1px solid;
+#menu .menu-item-link:hover,
+#menu .menu-item-link.active {
+  border-bottom: 2px solid #ffffff;  /* 你可以根据需求调整下划线的颜色和粗细 */
 }
 
 #light-mode-toggle {
@@ -99,7 +100,7 @@ nav {
 #recentPosts {
   font-size: 25px;
   color: #ffffff;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 #articleList ul {
@@ -107,7 +108,7 @@ nav {
 } 
 
 #articleList .article-li {
-  margin: 20px;
+  margin: 20px 0px;
   color: rgb(255, 255, 255);
 }
 
@@ -141,7 +142,7 @@ nav {
 /* #################### 文章 #################### */
 #article {
   color: #fff;
-  padding: 30px 10px;
+  padding: 30px 0px;
 }
 
 #post-header {
@@ -179,17 +180,20 @@ nav {
   font-weight: 900;
   padding-bottom: 10px;
   /* border-bottom: 2px solid #ffffff; */
-  border-left: 2px solid #73b1e0;
+  /* border-left: 2px solid #73b1e0; */
 }
 
 #article h2 {
   font-size: 22px;
-  margin-left: 10px; /* 设置缩进 */
+  /* margin-left: 10px;  */
 }
 
 #article h3 {
   font-size: 20px;
-  margin-left: 15px; /* 设置缩进 */
+}
+
+#article h4 {
+  font-size: 18px;
 }
 
 #article a {
@@ -385,6 +389,74 @@ h4:hover .header-anchor {
   font-weight: bold;  /* 加粗 prev ?? next 的文?? */
 }
 
+/* #################### 标签页面 #################### */
+/* tags-container 样式 */
+.tags-container {
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* tag-button 样式 */
+.tag-button {
+  padding: 5px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ddd;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tag-button:hover {
+  color: rgb(255, 107, 1);
+}
+
+/* tag-button 选中状态样式 */
+.tag-button.active {
+  color: rgb(255, 107, 1);
+}
+
+/* 隐藏非选中标签的文章 */
+.tag-section {
+  display: none;
+}
+
+.tag-section.show {
+  display: block;
+}
+
+/* 配置 tag-section 下的 h2 样式 */
+.tag-section h2 {
+  font-size: 1.5em;         /* 设置字体大小 */
+  color: #ddd;              /* 设置字体颜色为灰色 */
+  margin-bottom: 10px;      /* 设置下边距 */
+  font-weight: bold;        /* 设置字体加粗 */
+}
+
+/* 配置 tag-section 下的 p 样式 */
+.tag-section p {
+  font-size: 15px;           /* 设置字体大小 */
+  color: #f9f7eda7;
+  line-height: 1.6;         /* 设置行高 */
+  margin-bottom: 8px;       /* 设置段落之间的间距 */
+}
+
+/* 配置 tag-section 下的 a 样式 */
+.tag-section a {
+  font-size: 18px;
+  padding-left: 50px;
+  color: rgb(255, 107, 1);           /* 设置链接文字的颜色 */
+  text-decoration: none;    /* 去掉下划线 */
+}
+
+.tag-section a:hover {
+  color: white;           /* 设置链接鼠标悬停时的颜色 */
+  text-decoration: underline; /* 添加鼠标悬停时的下划线 */
+}
+
 
 /* #################### 浅色模式 #################### */
 body.light-mode {
@@ -439,6 +511,7 @@ body.light-mode #menu .menu-item-link:hover {
 }
 
 /* 文章标???和段落 */
+body.light-mode .tag-button,
 body.light-mode #article h1,
 body.light-mode #article h2,
 body.light-mode #article h3,
@@ -513,3 +586,18 @@ body.light-mode .pagination .next {
   font-weight: bold;
 }
 
+
+body.light-mode .tag-button:hover {
+  color: green;
+}
+
+body.light-mode .tag-button.active {
+  color: green;
+}
+
+
+body.light-mode .tag-section h2,
+body.light-mode .tag-section p,
+body.light-mode .tag-section a {
+  color: black;
+}

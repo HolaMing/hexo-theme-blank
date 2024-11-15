@@ -1,5 +1,7 @@
 ---
 title: Hello World
+tags: 
+  - MCU
 ---
 <!-- toc -->
 
