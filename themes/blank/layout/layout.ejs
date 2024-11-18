@@ -8,8 +8,11 @@
     <%- css('css/main.css') %>
 
     <!-- 代码高亮库 -->
-    <%- css('/lib/highlight/styles/atom-one-dark.css') %>
+    <!-- <%- css('/lib/highlight/styles/atom-one-dark.css') %> -->
     
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> -->
+
     <!-- 引入 Material Symbols 图标字体（仅需一次） -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <!-- 引入 Google Fonts -->
@@ -26,7 +29,14 @@
         <div id="content">
       <%- body %>
         </div>
-        
+        <!-- 一键到顶部按钮 -->
+        <button id="scrollToTop" class="scroll-to-top">
+            <span class="material-symbols-outlined">
+            arrow_upward
+            </span>
+        </button>
+
+
         <footer id="footer">
           <p>&copy; <%= new Date().getFullYear() %> Jettmin</p>
           <p> Powered <a href="https://github.com/hexojs/hexo">Hexo</a> | Theme <a href="https://github.com/hexojs/hexo-theme-landscape">Blank</a></p>
@@ -35,6 +45,4 @@
     <!-- 引入 js 文件 -->
     <%- js('js/main.js') %>
 </body>
-<%= console.log(page.tag) %>  <!-- 输出当前标签 -->
-
 </html>

@@ -30,5 +30,20 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
-const message = "Hello, Hexo!";
-console.log(message);
+  // 获取按钮元素
+  var mybutton = document.getElementById("scrollToTop");
+
+  // 当用户滚动页面时，显示或隐藏按钮
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";  // 显示按钮
+    } else {
+      mybutton.style.display = "none";   // 隐藏按钮
+    }
+  };
+
+  // 点击按钮时，滚动到顶部
+  mybutton.onclick = function() {
+    document.body.scrollTop = 0;  // 对于Safari
+    document.documentElement.scrollTop = 0;  // 对于Chrome, Firefox, IE和Opera
+  };

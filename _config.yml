@@ -46,12 +46,17 @@ future: true
 syntax_highlighter: highlight.js
 highlight:
   enable: false
-  line_number: true    # 可选，显示行号
-  auto_detect: true   # 可选，是否自动检测语言
+  auto_detect: true
+  line_number: false
+  line_threshold: 0
+  tab_replace: "  "
+  wrap: true
+  hljs: false
 prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+  enable: false
+  preprocess: false
+  line_number: false
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
