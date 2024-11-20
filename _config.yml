@@ -112,4 +112,6 @@ toc:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/HolaMing/hexo-theme-blank.git
+  branch: master
