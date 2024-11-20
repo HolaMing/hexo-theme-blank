@@ -23,7 +23,7 @@
         <h2>#<%= tag.name %></h2>
         <% tag.posts.sort('date', -1).forEach(function(post) { %>
           <p><%= post.date.format('YYYY-MM-DD') %><a href="<%= url_for(post.path) %>">
-            <%- post.slug.split("/")[post.slug.split("/").length-1] %></a></p>
+            <%- post.title %></a></p>
         <% }); %>
       </div>
     <% }); %>
