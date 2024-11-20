@@ -9,7 +9,7 @@ giscus: true
 ---
 <!-- toc -->
 
-# 1.先决条件dddddddddfasffdfdfsfffffffffffff
+# 1.先决条件
 1. 硬件：Windows PC，智能设备（可联网）
 2. 软件：docker，home assistant，ddns-go
 3. 技术：偏向计算机网络

@@ -53,13 +53,13 @@ void main(void)
 # 浮点数回顾
 ## 组成结构  
 按IEEE754标准规定浮点数格式:  
-![](/img/in-post/2024-05-11/float.excalidraw.png) 
+![](float.excalidraw.png) 
 
 ## 0.1 + 0.2 = ?
 连续的二进制数，对应的十进制数却是**不连续**的  
-![](/img/in-post/2024-05-11/1.png)   
+![](1.png)   
 
-![](/img/in-post/2024-05-11/1.0.png)  
+![](1.0.png)  
 
 ```c
 #include <stdio.h>
@@ -82,29 +82,29 @@ void main(void)
 有隐藏位1：**value = sign x 2 ^exp x (1 + fraction)**
 **1:**
 
-![](/img/in-post/2024-05-11/1.png)     
+![](1.png)     
 
 **最大正值：**  
 
-![](/img/in-post/2024-05-11/max+.png)	
+![](max+.png)	
 
 ## denormal number：：指数位全为0
 **表示0和接近0的值**
 单精度浮点数范围：**（-2^-126, 2^-126)**
 无隐藏位1：**value = sign x 2^-126 x fraction** 
 **+0和-0：**
-![](/img/in-post/2024-05-11/+0.png)  
-![](/img/in-post/2024-05-11/-0.png)   
+![](+0.png)  
+![](-0.png)   
 **最小正值：**
-![](/img/in-post/2024-05-11/min+.png)     	
+![](min+.png)     	
 
 ## 特殊值：指数位全为1
 **无穷infinity**：指数位全为1，尾数全为0
-![](/img/in-post/2024-05-11/max.png)		       
+![](max.png)		       
 
-![](/img/in-post/2024-05-11/min.png)  
+![](min.png)  
 **无效值NaN**  ：指数位全为1，尾数不全为0   				 
-![](/img/in-post/2024-05-11/nan.png)  
+![](nan.png)  
 
 ## 精确度，有效位数 
 **二进制有效位是换算到十进制的有效位**：  

@@ -15,20 +15,20 @@ ESP8266_RTOS_SDK+MinGW32
     并解压到你所需路径下
 2. 下载最新版[ESP8266编译工具](https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-win32.zip)
    并解压到上一步解压的文件夹的opt文件夹中
-![[解压到opt文件夹位置.png]](../.vuepress/public/img/in-post/2023-11-29/解压到opt文件夹位置.png)
+![[解压到opt文件夹位置.png]](解压到opt文件夹位置.png)
 # 2.下载SDK
-1. 打开mingw32![[mingw32位置.png]](../.vuepress/public/img/in-post/2023-11-29/mingw32位置.png)
+1. 打开mingw32![[mingw32位置.png]](mingw32位置.png)
 2. 下载SDK，输入下列命令，若下载成功可在home递归文件夹中发现
 ```shell
 git clone https://github.com/espressif/ESP8266_RTOS_SDK.git 
 ```
-1. 设置编译环境，打开子文件夹\etc\profile.d里面的 esp32_toolchain.sh文件![[esp32_toolchain文件位置.png]](../.vuepress/public/img/in-post/2023-11-29/esp32_toolchain文件位置.png)
+1. 设置编译环境，打开子文件夹\etc\profile.d里面的 esp32_toolchain.sh文件![[esp32_toolchain文件位置.png]](esp32_toolchain文件位置.png)
 2. 添加变量，路径为你所安装的位置，格式和下列相同
 ```shell
 	export PATH="$PATH:/opt/xtensa-lx106-elf/bin"
 	export IDF_PATH="C:/msys32/home/MingXXX/esp/ESP8266_RTOS_SDK"
 ```
-![[添加变量.png]](../.vuepress/public/img/in-post/2023-11-29/添加变量.png)
+![[添加变量.png]](添加变量.png)
 # 3.编译项目
 1. 设置烧录的端口号，打开mingw32终端
 ```shell
