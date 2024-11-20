@@ -3,10 +3,6 @@ layout: Post
 title: Windows PC充当服务器，远程管理设备
 date: 2023-10-31
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2023-10-31/1.png
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - network
 giscus: true  

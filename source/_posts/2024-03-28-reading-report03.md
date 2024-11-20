@@ -3,15 +3,12 @@ layout: Post
 title: 读书笔记：窄门
 date: 2024-03-28
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2024-03-28/1.jpg
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - reading
 giscus: true
-hide: true
 ---
+<!-- toc -->
+
 # 1.主要内容
 青梅竹马杰罗姆和阿莉沙追求纯真爱情，到阿莉沙选择牺牲自己让杰罗姆穿越“窄门”的爱情悲剧故事。
 # 2.重要片段

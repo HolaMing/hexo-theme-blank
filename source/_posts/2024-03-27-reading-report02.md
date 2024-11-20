@@ -3,15 +3,11 @@ layout: Post
 title: 读书笔记：乡下人的悲歌
 date: 2024-03-27
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2024-03-27/1.PNG
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - reading
 giscus: true
-hide: true
 ---
+<!-- toc -->
 
 # 1.主要内容
 

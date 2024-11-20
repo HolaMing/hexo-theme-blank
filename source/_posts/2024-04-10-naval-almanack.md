@@ -3,14 +3,11 @@ layout: Post
 title: 读书笔记：纳瓦尔宝典
 date: 2024-04-10
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2024-04-10/1.jpg
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - reading
 giscus: true  
 ---
+<!-- toc -->
 
 1. 任何划分阵营和贴标签的行为都会给人造成束缚，让人看不清真相。
 2. 摆脱很多以前习得的反应和习惯性反应，这样我就可以抛开记忆或固有的认知和判断，当机立断 ，做出更清晰的决定。

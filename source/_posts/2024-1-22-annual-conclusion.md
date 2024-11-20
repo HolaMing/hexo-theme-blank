@@ -3,15 +3,11 @@ layout: Post
 title: 2023年度总结
 date: 2024-01-22
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2024-1-22/2.png
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - life
 giscus: true
-hide: true
 ---
+<!-- toc -->
 
 # 我的大事件
 ## 换手机

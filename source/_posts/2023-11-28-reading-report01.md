@@ -3,15 +3,12 @@ layout: Post
 title: 读书笔记：秋园，浮木
 date: 2023-11-28
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2023-11-28/1.png
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - reading
 giscus: true
 hide: true
 ---
+<!-- toc -->
 
 # 1.主要内容
 1. 秋园：秋园四处漂泊，经历饥荒，批斗，女儿病逝，第一任丈夫饿死，儿子淹死，第二任丈夫病逝，辛酸地拉扯儿女长大。

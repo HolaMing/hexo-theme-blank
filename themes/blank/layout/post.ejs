@@ -1,9 +1,27 @@
+
 <div id="post-header">
   <span id="post-author">Author: <%- theme.author %></span>
-  <span id="post-date"><%- date(page.date, "YYYY-MM-DD HH:mm:ss") %></span>
+  <span id="post-date"><%- date(page.date, "YYYY-MM-DD") %></span>
 </div>
 
 <div id="article">
+  <h1 class="post-title"><%= page.title %></h1>
   <%- page.content %>
 </div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="HolaMing/Blog_Giscus"
+        data-repo-id="R_kgDOLJgWJA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLJgWJM4Ccr0E"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="noborder_dark"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 

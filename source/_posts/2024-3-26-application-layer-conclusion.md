@@ -3,14 +3,11 @@ layout: Post
 title: 应用层协议浅析
 date: 2024-03-26
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2024-3-26/1.jpg
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - network
 giscus: true  
 ---
+<!-- toc -->
 
 # SSH（Secure Shell）
 默认使用22端口，常见使用**公钥进行身份识别，私钥进行加密通讯数据**。  

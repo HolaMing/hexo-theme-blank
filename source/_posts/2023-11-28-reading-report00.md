@@ -3,15 +3,12 @@ layout: Post
 title: 读书笔记：人间失格，人间便利店
 date: 2023-11-28
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2023-11-28/3.jpg
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - reading
 giscus: true
 hide: true
 ---
+<!-- toc -->
 
 # 1.主要内容
 1. 人间失格：喜欢假装快乐并努力想让别人快乐的叶藏与多个女人之间，最终失去做人资格的故事。

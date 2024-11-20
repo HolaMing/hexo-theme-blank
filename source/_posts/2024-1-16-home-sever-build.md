@@ -3,14 +3,11 @@ layout: Post
 title: Home Server搭建
 date: 2024-01-16
 author:   Jett 
-useHeaderImage: true
-headerImage: /img/in-post/2024-1-16/1.png
-headerMask: rgba(40, 57, 101, .4)
-catalog: true
 tags: 
   - network
 giscus: true  
 ---
+<!-- toc -->
 
 # 1.访问问题
 目前有公网IPV6，但大多数设备目前不支持，例如公司电脑，连上WIFI的平板，目前就只有蜂窝数据的手机能够访问。  

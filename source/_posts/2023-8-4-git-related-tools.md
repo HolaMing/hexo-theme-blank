@@ -3,16 +3,11 @@ layout: Post
 title: Git相关规范管理工具  
 date: 2023-08-04  
 author:   Jett 
-categories: 
-- Common
-- Network
-- MCU
-- Read
-- Life
 tags: 
   - Common
 giscus: true  
 ---
+<!-- toc -->
 
 # 1.前提
 已安装[pnpm](https://www.pnpm.cn/installation)
